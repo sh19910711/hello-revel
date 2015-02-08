@@ -1,6 +1,6 @@
 define ["react"], (React)->
 
-  class @Controller
+  class Controller
 
     List = require("app/list/view")
 
