@@ -3,3 +3,5 @@ tmp/
 routes/
 bower_components/
 node_modules/
+public/js/
+public/css/
