@@ -1,12 +1,12 @@
 define ["react"], (React)->
 
-  class ListItems extends React.Component
+  class Items extends React.Component
 
-    ListItem = require("app/list/views/item")
+    Item = require("app/list/views/item")
 
     constructor: (props)->
       @itemComponents = props.items.map (value)=>
-        <ListItem onClickItem={this.onClickItem} key={value} value={value} />
+        <Item onClickItem={this.onClickItem} key={value} value={value} />
       super
 
     render: ->

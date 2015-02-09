@@ -1,6 +1,6 @@
 define ["react"], (React)->
 
-  class ListStatus extends React.Component
+  class Status extends React.Component
 
     constructor: (props)->
       super

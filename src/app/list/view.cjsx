@@ -2,9 +2,9 @@ define ["react"], (React)->
 
   class List extends React.Component
 
-    ListTitle = require("app/list/views/title")
-    ListItems = require("app/list/views/items")
-    ListStatus = require("app/list/views/status")
+    Title = require("app/list/views/title")
+    Items = require("app/list/views/items")
+    Status = require("app/list/views/status")
 
     constructor: ->
       @state =
@@ -14,9 +14,9 @@ define ["react"], (React)->
 
     render: ->
       <div className="list">
-        <ListTitle />
-        <ListStatus message={this.state.statusMessage} />
-        <ListItems onClickItem={this.onClickItem} items={this.items} />
+        <Title />
+        <Status message={this.state.statusMessage} />
+        <Items onClickItem={this.onClickItem} items={this.items} />
       </div>
 
     onClickItem: (value)=>
